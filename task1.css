@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #aaa9b39d;
+  }
+  
+  .gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .gallery {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .gallery-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    display: none;
+  }
+  
+  .gallery-item.active {
+    display: block;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
